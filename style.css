@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.cal-btns{
+    display: flex;
+    gap: 30px;
+
+}
+.plus{
+    display: grid;
+}
+
+
+.minus{
+    display: grid;
+}
+
+
+.mul{
+    display: grid;
+}
+
+
+.div{
+    display: grid;
+}
