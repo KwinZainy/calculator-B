@@ -1,6 +1,8 @@
 let btn = document.querySelectorAll(".btn")
-let input = document.getElementById("input")
+let screen = document.getElementById("screen")
 let mult = document.getElementById("multiplication")
+let totalValue = document.getElementById("totalValue")
+let clear = document.getElementById("clear")
 btn.forEach(element => {
     element.addEventListener('click', () => {
 
@@ -8,9 +10,26 @@ btn.forEach(element => {
         if(text == 'x'){
         text = '*'  
     }      
-    input.textContent += text
+    screen.textContent += text
         console.log(element); 
+    
+
+ 
     })
     
 })
+totalValue.addEventListener("click", () =>{
+
+
+    screen.textContent = eval(screen.textContent)
+
+    console.log(screen.textContent);
+    
+
+})
+
+clear.addEventListener("click", () =>{
+    screen.textContent = ''
+})
+
 
