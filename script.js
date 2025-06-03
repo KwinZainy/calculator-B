@@ -3,17 +3,20 @@ let screen = document.getElementById("screen")
 let mult = document.getElementById("multiplication")
 let totalValue = document.getElementById("totalValue")
 let clear = document.getElementById("clear")
+let text;
 btn.forEach(element => {
     element.addEventListener('click', () => {
 
-        let text = element.textContent
+         text = element.textContent
         if(text == 'x'){
         text = '*'  
     }      
     screen.textContent += text
         console.log(element); 
     
-
+ 
+   
+    
  
     })
     
@@ -23,19 +26,23 @@ totalValue.addEventListener("click", () =>{
 try{
     if(calculate){
         screen.textContent = eval(screen.textContent)
+        
     }
 } catch(error){
     screen.textContent = 'Error'
 }
-    
-
-    console.log(screen.textContent);
-    
+   const evaluated = eval(screen.textContent)
+    if (screen.textContent = evaluated){
+        screen.textContent = `  ${evaluated}`
+    }
+ 
 
 })
 
 clear.addEventListener("click", () =>{
     screen.textContent = ''
 })
+
+
 
 
