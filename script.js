@@ -19,9 +19,15 @@ btn.forEach(element => {
     
 })
 totalValue.addEventListener("click", () =>{
-
-
-    screen.textContent = eval(screen.textContent)
+    const calculate = screen.textContent
+try{
+    if(calculate){
+        screen.textContent = eval(screen.textContent)
+    }
+} catch(error){
+    screen.textContent = 'Error'
+}
+    
 
     console.log(screen.textContent);
     

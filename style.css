@@ -3,35 +3,113 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    background-color: #87CEEA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+   
+}
 
 #screen {
     background-color: black;
-    width: 90px;
-    height: 30px;
+    width: 440px;
+    height: 100px;
     color: #fff;
-    text-align: right;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    font-size: 50px;
+    padding: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 .cal-btns{
     display: flex;
-    gap: 30px;
+    gap: 20px;
+    background-color: rgb(255, 255, 255);
+    height: 350px;
+    padding: 10px;
+    border-radius: 20px;
+   border-top-left-radius: 0;
+   border-top-right-radius: 0;
+}
 
+button{
+    width: 90px;
+    font-size: 30px;
+    border: none;
+    border-radius: 5px;
+    background-color: #DFDFDF;
+}
+button:active{
+    background-color: #7D8180;
 }
 .plus{
     display: grid;
+     gap: 20px;
 }
 
+.diff{
+    background-color: #7D8180;
+    color: white;
+}
 
 .minus{
     display: grid;
+    gap: 20px;
 }
 
 
 .mul{
     display: grid;
+     gap: 20px;
 }
 
 
 .div{
-    display: grid;
+    display: flex;
+    flex-direction: column;
+     gap: 20px;
+      height: 100%;
+}
+#division{
+    height: 56px;
+}
+
+#totalValue{
+    height:300px;
+    background-color: #0DE35F;
+    color: white;
+}
+
+.container {
+    width: 440px;
+    height: 450px;
+    box-shadow: -20px 20px 20px gray;
+     border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    /* background-color: #0DE35F; */
+}
+#clear{
+    background-color: #FF2728;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+@media (maxwidth: 900px){
+    body{
+    background-color: aqua;
+    width: 100vh;
+   
+}
 }
