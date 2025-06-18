@@ -4,7 +4,7 @@ let mult = document.getElementById("multiplication")
 let totalValue = document.getElementById("totalValue")
 let clear = document.getElementById("clear")
 let text;
-let lastKey = ""
+let lastKey ;
 btn.forEach(element => {
     element.addEventListener('click', () => {
 
@@ -34,6 +34,10 @@ try{
     }
  
 })
+
+function name(params) {
+    
+}
 
 clear.addEventListener("click", () =>{
     screen.textContent = ''
