@@ -35,8 +35,13 @@ try{
  
 })
 
-function name(params) {
-    
+function values(input) {
+    if (lastKey = "="){
+        screen.textContent = input
+    }else{
+        screen.textContent += input
+    }
+    lastKey = input
 }
 
 clear.addEventListener("click", () =>{
